@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:src="@drawable/defaultpromosi"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_margin="10dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView"
+        android:layout_alignParentStart="true">
+        <LinearLayout
+            android:id="@+id/btnGallery"
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            android:orientation="vertical"
+            android:padding="10dp"
+            android:layout_gravity="center"
+            android:background="@drawable/roundbuttonorange"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_insert_photo_white_24dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#fff"
+                android:layout_gravity="center"
+                android:text="Pilih Gambar"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/btnKamera"
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            android:orientation="vertical"
+            android:padding="10dp"
+            android:layout_gravity="center"
+            android:background="@drawable/roundbuttonorange"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_photo_camera_white_24dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#fff"
+                android:layout_gravity="center"
+                android:text="Ambil Gambar"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/btnUpload"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:gravity="bottom"
+        android:background="#f47921"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_file_upload_white_24dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Unggah Gambar"
+            android:textColor="#fff" />
+    </LinearLayout>
+</RelativeLayout>

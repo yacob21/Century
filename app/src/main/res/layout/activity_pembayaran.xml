@@ -1,0 +1,727 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:background="#f5f5f5">
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="center" />
+
+    <ScrollView
+        android:id="@+id/mainLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/detailLayout"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/linearAtas"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:background="#fff"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:gravity="center"
+                    android:padding="3dp"
+                    android:text="Checkout Berhasil"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="Lokasi Pengambilan:"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvNamaLokasi"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvAlamatLokasi"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="1dp"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="Sisa Waktu Pembayaran Anda:"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/tvCountDown"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="TextView"
+                    android:textSize="20sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.3"
+                        android:gravity="right"
+                        android:text="Jam" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.3"
+                        android:gravity="center"
+                        android:text="Menit" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.3"
+                        android:gravity="left"
+                        android:text="Detik" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tvBatas"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="textview"
+                    android:textSize="13sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#f5f5f5"
+                    android:orientation="horizontal"></LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="Jumlah yang Harus Dibayar:"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:id="@+id/tvHarga"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Rp 1.234."
+                        android:textColor="#f47920"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tvHargaUnik"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="#f47920"
+                        android:gravity="left"
+                        android:text="123"
+                        android:textColor="#ffff66"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tvWarning"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="5dp"
+                    android:background="#000"
+                    android:padding="10dp"
+                    android:textAlignment="center"
+                    android:textColor="#fff"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/tvSalinJumlah"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="Salin Jumlah"
+                    android:textColor="#f47921" />
+
+                <TextView
+                    android:id="@+id/tvDetailPembayaran"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="1dp"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="Lihat Detail Pembayaran"
+                    android:textColor="#f47921" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearTengah"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/linearAtas"
+                android:background="#f5f5f5"
+                android:orientation="horizontal"></LinearLayout>
+
+            <LinearLayout
+
+                android:id="@+id/linearBawah"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/linearTengah"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="1dp"
+                    android:padding="10dp"
+                    android:text="Transfer Bank"
+                    android:textStyle="bold" />
+
+                <!--Linear BCA-->
+                <LinearLayout
+                    android:id="@+id/linearBca"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#fff"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="75dp"
+                        android:layout_height="50dp"
+                        android:layout_weight="0.12"
+                        android:padding="10dp"
+                        app:srcCompat="@drawable/bca" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="0.8"
+                        android:text="Bank BCA"
+                        android:textSize="20sp" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="0.07"
+                        app:srcCompat="@drawable/ic_keyboard_arrow_right_black_24dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#f5f5f5"
+                    android:orientation="horizontal"></LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearDetailBca"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#fff"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="5dp"
+                        android:padding="10dp"
+                        app:srcCompat="@drawable/bca" />
+
+                    <TextView
+                        android:id="@+id/tvRekBca"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:text="123 456 7890"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="a/n Century Cabang Kebon Jeruk - Perjuangan"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/tvSalinBca"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="Salin No. Rekening"
+                        android:textColor="#f47921" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearBawahBca"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#f5f5f5"
+                    android:orientation="horizontal"
+                    android:visibility="gone"></LinearLayout>
+                <!--Linear BCA-->
+
+                <!--Linear MANDIRI-->
+                <LinearLayout
+                    android:id="@+id/linearMandiri"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#fff"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="75dp"
+                        android:layout_height="50dp"
+                        android:layout_weight="0.16"
+                        android:padding="10dp"
+                        app:srcCompat="@drawable/mandiri" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="0.8"
+                        android:text="Bank MANDIRI"
+                        android:textSize="20sp" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="0.1"
+                        app:srcCompat="@drawable/ic_keyboard_arrow_right_black_24dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#f5f5f5"
+                    android:orientation="horizontal"></LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearDetailMandiri"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#fff"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="5dp"
+                        android:padding="10dp"
+                        app:srcCompat="@drawable/mandiri" />
+
+                    <TextView
+                        android:id="@+id/tvRekMandiri"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:text="123 456 789 0123"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="a/n Century Cabang Palmerah - Palmerah"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/tvSalinMandiri"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="Salin No. Rekening"
+                        android:textColor="#f47921" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearBawahMandiri"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#f5f5f5"
+                    android:orientation="horizontal"
+                    android:visibility="gone"></LinearLayout>
+                <!--Linear MANDIRI-->
+
+                <!--Linear BRI-->
+                <LinearLayout
+                    android:id="@+id/linearBri"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#fff"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="75dp"
+                        android:layout_height="50dp"
+                        android:layout_weight="0.11"
+                        android:padding="10dp"
+                        app:srcCompat="@drawable/bri" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="0.8"
+                        android:text="Bank BRI"
+                        android:textSize="20sp" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="0.07"
+                        app:srcCompat="@drawable/ic_keyboard_arrow_right_black_24dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearBawahBri"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#f5f5f5"
+                    android:orientation="horizontal"
+                    android:visibility="gone"></LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearDetailBri"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#fff"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="5dp"
+                        android:padding="10dp"
+                        app:srcCompat="@drawable/bri" />
+
+                    <TextView
+                        android:id="@+id/tvRekBri"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:text="123 456 7890"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="a/n Century Cabang Gajah Mada - Juanda"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/tvSalinBri"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="Salin No. Rekening"
+                        android:textColor="#f47921" />
+                </LinearLayout>
+                <!--Linear BRI-->
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/detailLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/mainLayout"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/cardListDetailPembayaran"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/bawah"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true" />
+
+        <LinearLayout
+            android:id="@+id/bawah"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:gravity="bottom"
+            android:orientation="vertical">
+
+            <TableLayout
+                android:id="@+id/linearsub"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+                <TableRow
+                    android:id="@+id/tbSubTotal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.6"
+                        android:text="Subtotal"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=": Rp"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/tvSubtotal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.4"
+                        android:gravity="right"
+                        android:textSize="18sp" />
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tbDiskon"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:id="@+id/text2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.6"
+                        android:textColor="#ff0000"
+                        android:text="(Diskon Member)"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=": Rp"
+                        android:textColor="#ff0000"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/tvDiskon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.4"
+                        android:textColor="#ff0000"
+                        android:gravity="right"
+                        android:textSize="18sp" />
+
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tbUnik"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="10dp"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:id="@+id/textView13"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.6"
+                        android:text="Harga Unik"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=": Rp"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/tvUnik"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.4"
+                        android:gravity="right"
+                        android:textSize="18sp" />
+
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tbTotal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#cccc"
+                    android:orientation="horizontal"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.6"
+                        android:text="Total"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=": Rp"
+                        android:textStyle="bold"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/tvTotal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.4"
+                        android:gravity="right"
+                        android:textStyle="bold"
+                        android:textSize="18sp" />
+                </TableRow>
+            </TableLayout>
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/koneksiLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/iv1"
+            android:layout_width="match_parent"
+            android:layout_height="250px"
+            android:layout_gravity="center"
+            android:layout_marginTop="1in"
+            android:padding="10dp"
+            app:srcCompat="@drawable/century" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="Terjadi Kesalahan Koneksi"
+            android:textColor="#000"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/text3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="Silahkan Coba Lagi" />
+
+        <ProgressBar
+            android:id="@+id/pbKoneksi"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:foregroundGravity="center"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/btnRefresh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/roundbuttonorange"
+            android:paddingLeft="50dp"
+            android:paddingRight="50dp"
+            android:text="COBA LAGI"
+            android:textColor="#fff" />
+
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.user.century">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permisson.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+    <uses-feature
+        android:name="android.hardware.camera2"
+        android:required="true" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/century"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/century"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@drawable/red" />
+        <!--
+             Set color used with incoming notification messages. This is used when no color is set for the incoming
+             notification message. See README(https://goo.gl/6BKBk7) for more.
+        -->
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_color"
+            android:resource="@color/colorAccent" />
+
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name" />
+        <!-- <activity -->
+        <!-- android:name="com.facebook.CustomTabActivity" -->
+        <!-- android:exported="true"> -->
+        <!-- <intent-filter> -->
+        <!-- <action android:name="android.intent.action.VIEW" /> -->
+
+
+        <!-- <category android:name="android.intent.category.DEFAULT" /> -->
+        <!-- <category android:name="android.intent.category.BROWSABLE" /> -->
+
+
+        <!-- <data android:scheme="@string/fb_login_protocol_scheme" /> -->
+        <!-- </intent-filter> -->
+        <!-- </activity> -->
+        <activity
+            android:name=".LoginActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateVisible|adjustPan" />
+        <activity
+            android:name=".Register.RegisterActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".produkKategori.ProdukKategoriActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Splash"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Register.PetaPertama"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Register.PilihPetaPertama"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Home.MainActivity"
+            android:label="@string/title_activity_main"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".produkKategori.DetailProduk"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Cart.CartActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".Profil.ProfilActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Profil.PengaturanActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Profil.UbahLokasiActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Profil.PilihPetaUbah"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Profil.GantiPasswordActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Profil.UbahProfilActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SearchPackage.SearchActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".BantuanActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".promosi.PromosiActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".cekStock.CekStockActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".cekStock.DetailCekActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Member.MemberActivity"
+            android:screenOrientation="sensorLandscape"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".Register.BarcodeScanner" />
+        <activity android:name=".Member.RegisterMemberActivity" />
+        <activity
+            android:name=".slider.FirstSlider"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".produkKategori.FilterActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".produkKategori.BrandActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+
+        <!-- <receiver -->
+        <!-- android:name=".MultiSlider" -->
+        <!-- android:screenOrientation="portrait"> -->
+        <!-- <intent-filter> -->
+        <!-- <action android:name="android.appwidget.action.APPWIDGET_UPDATE" /> -->
+        <!-- </intent-filter> -->
+
+
+        <!-- <meta-data -->
+        <!-- android:name="android.appwidget.provider" -->
+        <!-- android:resource="@xml/multi_slider_info" /> -->
+        <!-- </receiver> -->
+
+        <activity
+            android:name=".Pembayaran.PembayaranActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SearchPackage.FilterSearchActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".SearchPackage.BrandSearch" />
+        <activity
+            android:name=".Pembelian.PembelianActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Pembelian.DetailStatusPembayaran"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Pembelian.DetailStatusPemesanan"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Pembelian.DetailDaftarPembelian"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".LupaPassword"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".GuestLoginActivity.PilihPetaGuest"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".GuestLoginActivity.PetaGuest"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".GuestLoginActivity.GuestActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".LoginCartActivity"
+            android:screenOrientation="portrait" />
+
+        <service android:name=".MyFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <service android:name=".MyFirebaseInstanceIDService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+        <service
+            android:name=".MyJobService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.firebase.jobdispatcher.ACTION_EXECUTE" />
+            </intent-filter>
+        </service>
+
+        <receiver android:name=".UninstallIntentReceiver">
+            <intent-filter android:priority="0">
+                <action android:name="android.intent.action.QUERY_PACKAGE_RESTART" />
+
+                <data android:scheme="package" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name=".App"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity android:name=".UnggahActivity"></activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.user.century.Profil.PengaturanActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="30dp"
+        android:id="@+id/linearUbahProfil"
+        android:layout_alignParentStart="true">
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="47dp"
+            android:paddingRight="15dp"
+            android:src="@drawable/ic_account_circle_black_24dp" />
+
+        <TextView
+            android:id="@+id/tvUbah"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:text="Ubah Profil"
+            android:textColor="#000"
+            android:textSize="28sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#000"
+        android:orientation="horizontal"
+        android:layout_below="@id/linearUbahProfil"
+        android:id="@+id/linearLayout5"></LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="30dp"
+        android:layout_below="@+id/linearLayout5"
+        android:layout_alignParentStart="true"
+        android:id="@+id/linearUbahLokasi">
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="47dp"
+            android:paddingRight="15dp"
+            android:src="@drawable/ic_local_pharmacy_black_24dp" />
+
+        <TextView
+            android:id="@+id/tvUbahLokasi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:text="Ubah Lokasi Apotek"
+            android:textColor="#000"
+            android:textSize="28sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#000"
+        android:id="@+id/linear"
+        android:layout_below="@id/linearUbahLokasi"
+        android:orientation="horizontal"></LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearGantiPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/linear"
+        android:orientation="horizontal"
+        android:padding="30dp">
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="47dp"
+            android:paddingRight="15dp"
+            android:src="@drawable/ic_settings_black_24dp" />
+
+        <TextView
+            android:id="@+id/tvGanti"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:text="Ganti Kata Sandi"
+            android:textColor="#000"
+            android:textSize="28sp" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#000"
+        android:id="@+id/linear2"
+        android:layout_below="@id/linearGantiPassword"
+        android:orientation="horizontal"></LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/ivSlider"
+        android:scaleType="fitXY"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_gravity="bottom"
+            android:paddingBottom="10dp"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/guest"
+                android:layout_width="match_parent"
+                android:layout_height="150px"
+
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="10px"
+                android:layout_marginRight="10px"
+                android:background="@drawable/btnslider"
+                android:paddingLeft="10px"
+                android:paddingRight="10px"
+                android:text="Masuk sebagai Tamu"
+                android:textColor="#fff"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/btn"
+                android:layout_width="match_parent"
+                android:layout_height="150px"
+                android:layout_below="@id/guest"
+                android:layout_marginLeft="10px"
+                android:layout_marginRight="10px"
+                android:background="@drawable/btnslider"
+                android:paddingLeft="10px"
+                android:paddingRight="10px"
+                android:text="Masuk / Daftar"
+                android:textColor="#fff"
+                android:visibility="gone" />
+
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+</LinearLayout>

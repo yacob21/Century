@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.user.century.Register.RegisterActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <ImageView
+        android:layout_width="match_parent"
+        android:scaleType="fitXY"
+        android:src="@drawable/bg"
+        android:layout_height="match_parent" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <EditText
+                android:maxLength="50"
+                android:id="@+id/etNama"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="25dp"
+                android:layout_marginTop="10dp"
+                android:backgroundTint="#fff"
+                android:ems="10"
+                android:hint="Nama"
+                android:inputType="textPersonName"
+                android:textColor="#ffffff"
+                android:textColorHint="#ffffff" />
+
+            <EditText
+                android:id="@+id/etAlamat"
+                android:maxLength="180"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="25dp"
+                android:layout_marginTop="10dp"
+                android:backgroundTint="#fff"
+                android:ems="10"
+                android:hint="Alamat"
+                android:inputType="textMultiLine"
+                android:textColor="#ffffff"
+                android:textColorHint="#ffffff" />
+
+            <EditText
+                android:id="@+id/etTanggalLahir"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="25dp"
+                android:layout_marginTop="10dp"
+                android:backgroundTint="#fff"
+                android:ems="10"
+                android:hint="Tanggal Lahir"
+                android:inputType="text"
+                android:textColor="#ffffff"
+                android:textColorHint="#ffffff" />
+
+            <DatePicker
+                android:id="@+id/datePicker"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="20dp"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/rbPria"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="0.1"
+                    android:buttonTint="#ffffff"
+                    android:text="Pria"
+                    android:textColor="#ffffff" />
+
+                <RadioButton
+                    android:id="@+id/rbWanita"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:buttonTint="#ffffff"
+                    android:text="Wanita"
+                    android:textColor="#ffffff" />
+            </RadioGroup>
+
+            <EditText
+                android:id="@+id/etEmail"
+                android:maxLength="50"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="25dp"
+                android:layout_marginTop="10dp"
+                android:backgroundTint="#fff"
+                android:ems="10"
+                android:hint="E-mail"
+                android:inputType="textEmailAddress"
+                android:textColor="#ffffff"
+                android:textColorHint="#ffffff" />
+
+            <EditText
+                android:id="@+id/etPhone"
+                android:maxLength="15"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="25dp"
+                android:layout_marginTop="10dp"
+                android:backgroundTint="#fff"
+                android:ems="10"
+                android:hint="No.Handphone"
+                android:inputType="phone"
+                android:textColor="#ffffff"
+                android:textColorHint="#ffffff" />
+
+
+            <EditText
+                android:maxLength="20"
+                android:id="@+id/etPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="25dp"
+                android:layout_marginTop="10dp"
+                android:backgroundTint="#fff"
+                android:ems="10"
+                android:hint="Kata Sandi"
+                android:inputType="textPassword"
+                android:textColor="#ffffff"
+                android:textColorHint="#ffffff" />
+
+            <EditText
+                android:maxLength="20"
+                android:id="@+id/etKonfirmasiPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="25dp"
+                android:layout_marginTop="10dp"
+                android:backgroundTint="#fff"
+                android:ems="10"
+                android:hint="Konfirmasi Kata Sandi"
+                android:inputType="textPassword"
+                android:textColor="#ffffff"
+                android:textColorHint="#ffffff" />
+
+            <CheckBox
+                android:id="@+id/cbMember"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:buttonTint="#ffffff"
+                android:text="Punya Kode Anggota?"
+                android:textColor="#ffffff" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <EditText
+                    android:id="@+id/etMember"
+                    android:layout_width="317dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:backgroundTint="#fff"
+                    android:ems="10"
+                    android:hint="Kode Anggota"
+                    android:inputType="number"
+                    android:visibility="gone"
+                    android:maxLength="50"
+                    android:textColor="#ffffff"
+                    android:textColorHint="#ffffff"
+                    android:layout_weight="0.67" />
+
+                <ImageView
+                    android:id="@+id/ivBarcode"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:visibility="gone"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/barcode" />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnRegis"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/roundbuttonorange"
+                android:text="Lanjut"
+                android:textColor="#ffffff"
+                android:textSize="20sp" />
+
+
+        </LinearLayout>
+    </ScrollView>
+    </FrameLayout>
+</RelativeLayout>

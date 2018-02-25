@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/card_view"
+    android:background="#B0e7da"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <LinearLayout
+        android:id="@+id/btnProduk"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="vertical"
+        android:paddingBottom="15dp"
+        android:paddingTop="15dp"
+        android:weightSum="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/ivClear"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:src="@drawable/ic_clear_black_24dp" />
+
+            <ImageView
+                android:id="@+id/ivProduk"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/defaultpromosi"
+
+                />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvNamaProduk"
+                    android:layout_width="165dp"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="marquee"
+                    android:lines="1"
+                    android:padding="5dp"
+                    android:singleLine="true"
+                    android:text="Nama Produk" />
+
+                <TextView
+                    android:id="@+id/tvHargaProduk"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="Harga Produk"
+                    android:textColor="#f47920" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_gravity="bottom"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:weightSum="1">
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.91"
+                    android:gravity="center|bottom"
+                    android:text="Qty"
+                    android:textColor="#000" />
+
+                <LinearLayout
+                    android:paddingTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="37dp"
+                    android:layout_gravity="bottom"
+                    android:gravity="center|bottom"
+                    android:orientation="horizontal"
+                    android:weightSum="1"
+                    android:layout_weight="0.18">
+
+                    <ImageView
+                        android:id="@+id/ivKurang"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_marginBottom="5dp"
+                        android:src="@drawable/ic_remove_circle_outline_black_24dp" />
+
+                    <EditText
+                        android:id="@+id/etQty"
+                        android:layout_width="30dp"
+                        android:layout_height="40dp"
+                        android:layout_weight="0.25"
+                        android:editable="false"
+                        android:gravity="right|bottom"
+                        android:inputType="number"
+                        android:maxLength="2"
+                        android:textAlignment="center"
+                        android:textSize="14sp" />
+
+                    <ImageView
+                        android:id="@+id/ivTambah"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_marginBottom="5dp"
+                        android:src="@drawable/ic_add_circle_outline_black_24dp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>

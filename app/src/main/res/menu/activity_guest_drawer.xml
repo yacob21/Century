@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/navHome"
+            android:icon="@drawable/home_icon"
+            android:title="Beranda" />
+        <item
+            android:id="@+id/navUbah"
+            android:icon="@drawable/ic_local_pharmacy_black_24dp"
+            android:title="Ubah Lokasi Apotek" />
+        <item
+            android:id="@+id/navCek"
+            android:icon="@drawable/ic_search_black_24dp"
+            android:title="Cek Stok" />
+        <item
+            android:id="@+id/navHubungi"
+            android:icon="@drawable/hubungi_icon"
+            android:title="Hubungi Kami" />
+        <item
+            android:id="@+id/navBantuan"
+            android:icon="@drawable/bantuan_icon"
+            android:title="Bantuan" />
+    </group>
+
+    <!--
+    <item android:title="Communicate">
+        <menu>
+
+        </menu>
+    </item>
+    -->
+</menu>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/navHome"
+            android:icon="@drawable/home_icon"
+            android:title="Beranda" />
+
+    <group android:checkableBehavior="single">
+                    <item
+                        android:id="@+id/navPembelian"
+                        android:icon="@drawable/pembelian_icon"
+                        android:showAsAction="collapseActionView"
+                        app:actionLayout="@layout/layout_menu"
+                        android:title="Pembelian" >
+                    </item>
+                     <item
+                         android:id="@+id/navPembayaran"
+                         android:visible="false"
+                         app:actionViewClass="android.widget.TextView"
+                         android:title="Status Pembayaran" />
+                     <item
+                         android:id="@+id/navPemesanan"
+                         android:visible="false"
+                         app:actionViewClass="android.widget.TextView"
+                         android:title="Status Pemesanan" />
+                     <item
+                         android:id="@+id/navDaftarPembelian"
+                         android:visible="false"
+                         android:title="Daftar Pembelian" />
+     </group>
+
+        <item
+            android:id="@+id/navCek"
+            android:icon="@drawable/ic_search_black_24dp"
+            android:title="Cek Stok" />
+        <item
+            android:id="@+id/navMember"
+            android:icon="@drawable/ic_card_membership_black_24dp"
+            android:title="Member" />
+        <item
+            android:id="@+id/navProfil"
+            android:icon="@drawable/ic_account_circle_black_24dp"
+            android:title="Profil" />
+        <item
+            android:id="@+id/navHubungi"
+            android:icon="@drawable/hubungi_icon"
+            android:title="Hubungi Kami" />
+        <item
+            android:id="@+id/navBantuan"
+            android:icon="@drawable/bantuan_icon"
+            android:title="Bantuan" />
+        <item
+            android:id="@+id/navKeluar"
+            android:icon="@drawable/keluar_icon"
+            android:title="Keluar"
+            />
+    </group>
+
+    <!--
+    <item android:title="Communicate">
+        <menu>
+
+        </menu>
+    </item>
+    -->
+</menu>
